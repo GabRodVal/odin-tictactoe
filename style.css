@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+
+  * {
+    margin: 0;
+  }
+
+  body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: var(--title-font);
+    color: var(--font-white);
+  }
+
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+
+  input, button, textarea, select {
+    font: inherit;
+  }
+
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+
+
+  #root, #__next {
+    isolation: isolate;
+  }
+
+  :root{
+      font-size: 1.6vh;
+      --font-white: #fafafa;
+      --title-font: "Oswald", Roboto, sans-serif;
+      --text-font: Roboto, system-ui, sans-serif;
+  }
+
+  body{
+    background-color: #18181b;
+  }
+
+  .game-header{
+    display: flex;
+    position: relative;
+    margin: auto;
+    justify-content: center;
+    font-size: 8rem;
+    width: 40vh;
+}
+
+  .main-box{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 45vh;
+    height: 45vh;
+    margin: auto;
+    background-color: #3f3f46;
+    border-radius: 2rem;
+  }
+
+  #tictactoe-game{
+    display: grid;
+    grid-template: 15vh 15vh 15vh / 15vh 15vh 15vh;
+  }
+
+  .game-container{
+    display: flex;
+    position: relative;
+    border: solid #18181b 0.4rem;
+    border-radius: 2rem;
+    justify-content: center;
+    align-items: center;
+    margin: 0.3rem;
+    cursor: pointer;
+    font-family: Arial;
+    font-weight: 600;
+  }
+  
+  .game-container:hover{
+    background-color: #18181b;
+  }
+
+  #o-score{
+    color:#ea580c;
+    font-size: 6rem;
+  }
+
+  .o-token{
+    color: #ea580c;
+    font-size: 6rem;
+  }
+
+  #x-score{
+    color:#0C9EEA;
+    font-size: 6rem;
+  }
+
+  .x-token{
+    color: #0C9EEA;
+    font-size: 6rem;
+  }
+
+
+  .status-box{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 40vw;
+    align-items: center;
+    margin: auto;
+  }
+
+  #reset-button{
+    width:20%;
+    position: relative;
+    display: flex;
+    font-size: 2rem;
+    padding: 0.2rem;
+    margin: 1rem;
+    color: var(--font-white);
+    border: none;
+    border-radius: 0.6rem;
+    background-color:#facc15;
+    cursor: pointer;
+  }
+
+  #reset-button:hover{
+    background-color:#d4aa00;
+  }
+
+  .button-text{
+    display: flex;
+    margin: auto;
+    text-align: end;
+  }
+
+  .icon{
+    width: 2.4rem;
+    margin: 0.2rem;
+    justify-self: left;
+    filter: invert();
+  }
+
+  .turn-status{
+    display:flex;
+    font-size: 2rem;
+    align-items: center;
+  }
+
+  #current-player{
+    font-size: 3rem;
+  }
